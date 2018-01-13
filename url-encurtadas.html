@@ -1,0 +1,27 @@
+<div class="container">
+    <h3>Urls já encurtadas por você</h3>
+    <table class="responsive-table bordered highlight ">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Url original</th>
+                <th>Url Curta</th>
+                <th>Data de Criação</th>
+            </tr>
+        </thead>
+
+        <tbody ng-repeat="url in urlEncurtadas">
+            <tr>
+                <td>{{url.urlId}}</td>
+                <td>{{url.trueUrl}}</td>
+                <td>https://qml.ink/?u={{url.urlId}}</td>
+                <td>{{url.createdOn}}</td>
+                <td>
+                    <i class="tiny material-icons tooltipped" data-position="left" data-delay="50" data-tooltip='Copiar link encurtado'>content_copy</i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <a href="#">Home</a>
+</div>

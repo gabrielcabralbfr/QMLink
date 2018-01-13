@@ -1,5 +1,6 @@
-.sign-out {
-    transform: rotateY(180deg);
+.nav-bar {
+    position: relative;
+    z-index: -1;
 }
 
 .side-nav {
@@ -7,7 +8,13 @@
     background-color: #222;
 }
 
-.side-nav li>a, .side-nav li>a>i.material-icons {
+#url,
+#tag {
+    display: inline-block !important;
+}
+
+.side-nav li>a,
+.side-nav li>a>i.material-icons {
     color: #fff;
     transition-duration: 0.8s;
 }
@@ -17,7 +24,7 @@
     background-color: #000;
 }
 
-.panel {
+.container {
     margin: 150px;
     margin-left: 350px;
 }
@@ -28,6 +35,10 @@ a.btn {
 
 .card-panel {
     margin-top: 70px;
+}
+
+.result-panel {
+    display: none;
 }
 
 .logo {
@@ -42,24 +53,33 @@ a.btn {
     height: auto;
 }
 
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+::-moz-placeholder {
+    color: #000;
+}
+
+:-moz-placeholder {
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
 #progress-bar {
     width: 100%;
-    height: 5px;
+    height: 2px;
     border-radius: 15px;
     background-color: orange;
     color: pink;
-}
-
-progress {
-    border: none;
-    width: 400px;
-    height: 60px;
-    background: crimson;
-}
-
-progress {
     vertical-align: top;
-    z-index: -1;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 progress::-webkit-progress-value {
